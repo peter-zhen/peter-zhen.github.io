@@ -10,10 +10,14 @@
 
 <body>
   <div id="root"></div>
-  <div>
+  <div id="div">
     111
   </div>
   <script type="module" src="/src/main.tsx"></script>
+  <script>
+    const div = window.document.getElementById('div')
+    div.innerHTML = window.navigator.userAgent
+  </script>
 </body>
 
 </html>
